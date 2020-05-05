@@ -7,7 +7,7 @@
 # - master
 
 # pool:
-#   vmImage: 'ubuntu-latest'
+#   vmImage: 'windows-2019'
 
 # steps:
 # - script: echo Hello, world!
@@ -23,7 +23,7 @@ trigger:
     include:
     - '*' 
   pool:
-    vmImage: windows-2019
+    vmImage: 'windows-2019'
   steps:
   - task: ArchiveFiles@2
     displayName: 'Archive FunctionApp'
